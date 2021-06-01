@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Node.js express mongDB CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body class="bg-info">
+    <div class="d-flex vh-100 align-items-center justify-content-center">
+        <div class="col-md-6 col-sm-8 p-3 rounded shadow" style="background-color: #fff;">
+        
+       
+
+
+<form action="/update" method="POST" autocomplete="off">
+    <input type="hidden" name="_id" value="<%=employee._id %>"> 
+    <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" class="form-control mb-3 mt-2" name="name" placeholder="Full Name" value="<%=employee.name %>">
+    </div>
+    <div class="form-row">
+        <div class="form-group mb-3 mt-2">
+            <label>E-mail</label>
+            <input type="email" class="form-control" name="email" placeholder="email" value="<%=employee.email%>" >
+        </div>
+        <div class="form-group mb-3 mt-2">
+            <label>password</label>
+            <input type="password" class="form-control" name="password placeholder="password" value="" >
+        </div>
+         <div class="form-group d-flex justify-content-around">
+        <button type="submit" class="btn btn-info text-light m-1 d-flex align-items-center"><i class="fa fa-database me-1"></i> Submit</button>
+       </div>
+</form>
+ </div>
+    </div>
+
+</body>
+
+</html>
+     
